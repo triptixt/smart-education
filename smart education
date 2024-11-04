@@ -1,0 +1,1116 @@
+#index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Bucks</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Brain Bucks</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="student.html">Student</a>
+            <a href="tutor.html">Tutor</a>
+            <a href="parent.html">Parent</a>
+        </nav>
+    </header>
+    <main> 
+    <!-- Main Banner Section -->
+    <section id="banner">
+        <div class="banner-content">
+            <h2>Learn Smarter, Win Bigger!</h2>
+            <p>Join our platform where learning is fun and rewards are real.</p>
+            <a href="#signup" class="btn">Get Started</a>
+        </div>
+    </section>                 
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Learn & Quiz</h2>
+        <p>Learn & Quiz is an innovative platform where students can access free and premium learning resources, take weekly quizzes, and earn coins that can be redeemed for exciting rewards.</p>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+        <h2>Our Features</h2>
+        <div class="feature-box">
+            <div class="feature">
+                <h3>Free Learning</h3>
+                <p>Access recorded lectures and chat-based doubt solving.</p>
+            </div>
+            <div class="feature">
+                <h3>Premium Learning</h3>
+                <p>Get live interaction with tutors, bonus questions, and extra rewards.</p>
+            </div>
+            <div class="feature">
+                <h3>Daily Quizzes</h3>
+                <p>Participate in quizzes daily and earn redeemable coins.</p>
+            </div>
+            <div class="feature">
+                <h3>Parent Monitoring</h3>
+                <p>Parents can track their child's progress, attendance, and communicate securely.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tutorial Videos Section -->
+    <section id="tutorials">
+        <h2>How It Works</h2>
+        <div class="video-sample">
+            <video width="320" height="240" controls>
+                <source src="sample-tutorial.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>Sample Tutorial: How to Use Learn & Quiz Platform</p>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section id="signup">
+        <h2>Ready to Start Learning?</h2>
+        <a href="#signup-form" class="btn">Sign Up Now</a>
+    </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Learn & Quiz. All Rights Reserved.</p>
+    </footer>
+    
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+#login.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Login</h1>
+        <nav>
+            <a href="index.html">Home</a>  
+        </nav>
+    </header>
+    <main>
+        <section id="login-form">
+            <h2>Login</h2>
+            <form id="login"> 
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+#student.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Student Dashboard</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login.html">Logout</a>
+        </nav>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#free-learning">Free Learning</a></li>
+            <li><a href="#premium-learning">Premium Learning</a></li>
+            <li><a href="#Daily-quiz">Daily Quiz</a></li>
+            <li><a href="#coins">Your Coins: <span id="coinCount">0</span></a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="free-learning">
+            <h2>Free Learning</h2>
+            <div class="free-learning-block">
+                <h3>Recorded Lectures</h3>
+                <ul>
+                    <li><a href="#">Lecture 1: Introduction to Python</a></li>
+                    <li><a href="#">Lecture 2: Variables and Data Types</a></li>
+                    <li><a href="#">Lecture 3: Control Structures</a></li>
+                </ul>
+            </div>
+            <div class="free-learning-block">
+                <h3>Chat Box</h3>
+                <div class="chat-box">
+                    <input type="text" id="chat-input" placeholder="Type a message...">
+                    <button id="send-btn">Send</button>
+                    <ul id="chat-log">
+                        <li>Student: Hello, how are you?</li>
+                        <li>Teacher: I'm good, thanks! How can I help you?</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="free-learning-block">
+                <h3>Quiz Questions</h3>
+                <ul>
+                    <li>What is the capital of France?</li>
+                    <li>What is the largest planet in our solar system?</li>
+                    <li>Who wrote the book "To Kill a Mockingbird"?</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="premium-learning">
+            <h2>Premium Learning</h2>
+            <div class="premium-learning-block">
+                <h3>Live Interaction with Teachers</h3>
+                <p>Get live help from our expert teachers!</p>
+                <button id="live-interaction-btn">Start Live Interaction</button>
+            </div>
+            <div class="premium-learning-block">
+                <h3>Bonus Questions</h3>
+                <ul>
+                    <li>What is the smallest country in the world?</li>
+                    <li>Who is the CEO of SpaceX?</li>
+                    <li>What is the largest living species of lizard?</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="Daily-quiz">
+            <h2>Daily Quiz</h2>
+            <button id="start-btn" onclick="startQuiz()">Start Quiz</button>
+            <div id="quiz-content" style="display: none;">
+                <div id="question"></div>
+                <div id="options"></div>
+                <div id="score">Score: 0</div>
+              
+                <button id="end-btn" onclick="endQuiz()">End Quiz</button>
+                <button id="restart-btn" onclick="restartQuiz()">Restart Quiz</button>
+            </div>
+        </section>
+
+        <section id="coins">
+            <h2>Claim Coins & Redeem Prizes</h2>
+            <button onclick="claimCoins()">Claim Coins</button>
+            <p id="coinMessage"></p>
+            <h3>Redeem Your Prizes</h3>
+            <button onclick="redeemPrize(100)">Redeem Books (100 coins)</button>
+            <button onclick="redeemPrize(200)">Redeem Gifts Card (200 coins)</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Quiz & Tutor Platform. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+   
+</body>
+</html>
+
+#parent.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Parent Dashboard</h1>
+            <ul>
+                <li><a href="#child-progress">Child's Progress</a></li>
+                <li><a href="#notifications">Notifications</a></li>
+                <li><a href="#attendance">Attendance</a></li>
+                <li><a href="#messages">Messages</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="dashboard">
+        <h2>Welcome, Parent!</h2>
+
+        <!-- Child Progress Section -->
+        <h3 id="child-progress">Child's Progress</h3>
+        <div id="progress-report">
+            <p><strong>Math:</strong> 85% Completion</p>
+            <p><strong>Science:</strong> 90% Completion</p>
+            <p><strong>History:</strong> 70% Completion</p>
+        </div>
+
+        <!-- Notifications Section -->
+        <h3 id="notifications">Notifications</h3>
+        <ul id="notification-list">
+            <!-- Notifications will be populated here -->
+            <li>No new notifications.</li>
+        </ul>
+
+        <!-- Attendance Section -->
+        <h3 id="attendance">Attendance</h3>
+        <p>Days Attended: 30/34</p>
+
+        <!-- Messages Section -->
+        <h3 id="messages">Messages</h3>
+        <div id="messages-box">
+            <h4>Voice Messages</h4>
+            <ul id="voice-messages">
+                <li>No voice messages.</li>
+            </ul>
+
+            <h4>Written Notices</h4>
+            <ul id="written-notices">
+                <li>No new notices.</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Learn & Quiz. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+#tutor.html
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutor Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Tutor Dashboard</h1>
+            <ul>
+                <li><a href="#notifications">Notifications</a></li>
+                <li><a href="#students">Manage Students</a></li>
+                <li><a href="#sessions">Schedule Sessions</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="dashboard">
+        <h2>Welcome, Tutor!</h2>
+
+        <!-- Notifications Section -->
+        <h3 id="notifications">Student Interactions & Notifications</h3>
+        <ul id="notification-list">
+            <!-- Notifications will be populated here -->
+            <li>No new notifications.</li>
+        </ul>
+
+        <!-- Manage Students Section -->
+        <h3 id="students">Manage Students</h3>
+        <ul id="student-list">
+            <li>Student 1: John Doe</li>
+            <li>Student 2: Jane Smith</li>
+        </ul>
+
+        <!-- Schedule Live Sessions Section -->
+        <h3 id="sessions">Schedule Live Sessions</h3>
+        <form id="session-form">
+            <label for="session-name">Session Name:</label>
+            <input type="text" id="session-name" placeholder="Enter session name" required>
+            
+            <label for="session-date">Date:</label>
+            <input type="date" id="session-date" required>
+            
+            <label for="session-time">Time:</label>
+            <input type="time" id="session-time" required>
+            
+            <button type="submit">Schedule Session</button>
+        </form>
+
+        <h3>Upcoming Sessions</h3>
+        <ul id="session-list">
+            <!-- Scheduled sessions will appear here -->
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Learn & Quiz. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
+#styles.css
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f9f9f9, #e0f7fa);
+  }
+  
+  header {
+    background: #004d40;
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2em;
+    animation: slideIn 1s ease-out;
+  }
+  
+  nav {
+    background: #00796b;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #cddc39;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  /* Section Styles */
+  section {
+    margin-bottom: 30px;
+  }
+  
+  h2 {
+    color: #004d40;
+    border-bottom: 2px solid #004d40;
+    padding-bottom: 10px;
+    font-size: 1.8em;
+    position: relative;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  h3 {
+    color: #00796b;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .free-learning-block, .premium-learning-block {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    padding: 15px;
+    animation: zoomIn 1s ease-in-out;
+  }
+  
+  .free-learning-block ul, .premium-learning-block ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .free-learning-block li, .premium-learning-block li {
+    margin-bottom: 10px;
+  }
+  
+   button {
+    background: #004d40;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition:   background 0.3s ease, transform 0.3s ease;
+    animation: pulse 1.5s infinite;
+  } 
+  
+  button:hover, button:focus {
+    background: #00796b;
+  }
+  
+  /* Quiz Styles */
+  .quiz-container {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+  } 
+  
+   #question-container {
+    margin-bottom: 20px;
+  }
+  
+  #question {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+  }
+  
+  .options { 
+    margin-bottom: 10px;
+  }
+  
+  .option {
+    background: #004d40;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .option:hover, .option:focus {
+    background: #00796b;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background: #004d40;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+  }
+  
+  /* Animations */
+  @keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }
+  
+  @keyframes zoomIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#dashboard {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #e7f3ff;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#dashboard {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  background-color: #e7f3ff;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#progress-report p, #attendance p {
+  background-color: #e7f3ff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #f9f9f9, #e0f7fa);
+}
+
+header {
+  background: #333;
+  color: #ffffff;
+  padding: 15px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+  animation: slideIn 1s ease-out;
+}
+
+nav {
+  background: #00796b;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #cddc39;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #004d40;
+  border-bottom: 2px solid #004d40;
+  padding-bottom: 10px;
+  font-size: 1.8em;
+  animation: fadeIn 1s ease-in-out;
+}
+
+h3 {
+  color: #00796b;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.feature-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.feature {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 15px;
+  flex: 1;
+  min-width: 250px;
+  animation: zoomIn 1s ease-in-out;
+}
+
+.video-sample {
+  text-align: center;
+}
+
+.btn {
+  background: #004d40;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: #00796b;
+}
+
+footer {
+  background: #333;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+#script.js
+// script.js
+
+// Chat Box functionality
+const chatInput = document.getElementById('chat-input');
+const sendBtn = document.getElementById('send-btn');
+const chatLog = document.getElementById('chat-log');
+
+sendBtn.addEventListener('click', () => {
+  const userMessage = chatInput.value;
+  chatLog.innerHTML += `<li>Student: ${userMessage}</li>`;
+  chatInput.value = '';
+});
+
+// Live Interaction button functionality
+const liveInteractionBtn = document.getElementById('live-interaction-btn');
+
+liveInteractionBtn.addEventListener('click', () => {
+  alert('Live interaction started!');
+});
+
+// Weekly Quiz functionality
+function startQuiz() {
+    // Hide the start button and show the quiz content
+    document.getElementById('start-btn').style.display = 'none';
+    document.getElementById('quiz-content').style.display = 'block';
+}
+
+
+
+function endQuiz() {
+    // Hide the quiz content and show the start button
+    document.getElementById('quiz-content').style.display = 'none';
+    document.getElementById('start-btn').style.display = 'block';
+    alert("Quiz ended! your final score is:" + score);
+}
+function restartQuiz() {
+    currentQuestionIndex = 0;
+    score = 0;
+    coins= 0;
+    document.getElementById("question").innerHTML = "";
+    document.getElementById("options").innerText = "coins : 0";
+    document.getElementById("score").innerHTML = "score : 0";
+    //reset coins display
+    document.getElementById('start-btn').style.display ='block';
+    document.getElementById('quiz-content').style.display = 'none';
+
+    
+}
+    
+
+const quiz = [
+    {
+        question: "What is the capital of France?",
+        options: ["Berlin", "Madrid", "Paris", "Rome"],
+        correct: 2
+    },
+    {
+        question: "What is 2 + 2?",
+        options: ["3", "4", "5", "6"],
+        correct: 1
+    },
+    {
+        question: "What is the largest ocean on Earth?",
+        options: ["Atlantic", "Indian", "Pacific", "Arctic"],
+        correct: 2
+    },
+    {
+        question: "What planet is known as the Red Planet?",
+        options: ["Earth", "Mars", "Jupiter", "Saturn"],
+        correct: 1
+    },
+    {
+        question: "Which language is used for web apps?",
+        options: ["PHP", "Python", "JavaScript", "All"],
+        correct: 3
+    }
+];
+
+
+let currentQuestionIndex = 0;
+let score = 0;
+let coins = 0;
+
+function displayQuestion() {
+    const questionElement = document.getElementById('question');
+    const optionsElement = document.getElementById('options');
+
+    const currentQuestion = quiz[currentQuestionIndex];
+    questionElement.textContent = currentQuestion.question;
+
+    // Clear previous options
+    optionsElement.innerHTML = '';
+
+    // Display options
+    currentQuestion.options.forEach((option, index) => {
+        const button = document.createElement('button');
+        button.textContent = option;
+        button.onclick = () => handleAnswer(index);
+        optionsElement.appendChild(button);
+    });
+}
+
+function handleAnswer(selectedOptionIndex) {
+    const currentQuestion = quiz[currentQuestionIndex];
+    const scoreElement = document.getElementById('score');
+    if (selectedOptionIndex === currentQuestion.correct) {
+        coins += 10;
+    } else {
+        coins -= 1;
+    }
+
+    scoreElement.textContent = `Coins: ${coins}`;
+
+    // Move to the next question
+    currentQuestionIndex++;
+
+    if (currentQuestionIndex < quiz.length) {
+        displayQuestion();
+    } else {
+        document.getElementById('question-container').innerHTML = `<h2>Quiz Complete!</h2><p>Your total coins: ${coins}</p>`;
+    }
+}
+
+// Initialize quiz
+displayQuestion();
+
+
+function claimCoins() {
+    alert("You have claimed your coins.");
+    document.getElementById('coinMessage').innerText = `You now have ${coinCount} coins!`;
+}
+
+function redeemPrize(requiredCoins) {
+    if (coinCount >= requiredCoins) {
+        coinCount -= requiredCoins;
+        document.getElementById('coinCount').innerText = coinCount;
+        alert(`Congratulations! You've redeemed a prize for ${requiredCoins} coins.`);
+    } else {
+        alert("You don't have enough coins to redeem this prize.");
+    }
+}
+// Example Notifications and Student List
+let Notifications = [
+    "Student John Doe asked a question in Math.",
+    "Student Jane Smith completed her quiz in Science.",
+];
+
+let students = ["John Doe", "Jane Smith"];
+
+let sessions = [];
+
+// Display notifications on load
+window.onload = function() {
+    updateNotifications();
+};
+
+// Function to display notifications
+function updateNotifications() {
+    let notificationList = document.getElementById('notification-list');
+    notificationList.innerHTML = ''; // Clear previous notifications
+
+    if (notifications.length > 0) {
+        notifications.forEach(notification => {
+            let li = document.createElement('li');
+            li.textContent = notification;
+            notificationList.appendChild(li);
+        });
+    } else {
+        let li = document.createElement('li');
+        li.textContent = "No new notifications.";
+        notificationList.appendChild(li);
+    }
+}
+
+// Schedule a new live session
+document.getElementById('session-form').addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent page reload
+
+    let sessionName = document.getElementById('session-name').value;
+    let sessionDate = document.getElementById('session-date').value;
+    let sessionTime = document.getElementById('session-time').value;
+
+    let sessionDetails = `${sessionName} on ${sessionDate} at ${sessionTime}`;
+    sessions.push(sessionDetails);
+
+    updateSessionList(); // Update the upcoming sessions list
+
+    // Clear the form
+    document.getElementById('session-form').reset();
+});
+
+// Function to update the upcoming sessions list
+function updateSessionList() {
+    let sessionList = document.getElementById('session-list');
+    sessionList.innerHTML = ''; // Clear previous list
+
+    if (sessions.length > 0) {
+        sessions.forEach(session => {
+            let li = document.createElement('li');
+            li.textContent = session;
+            sessionList.appendChild(li);
+        });
+    } else {
+        let li = document.createElement('li');
+        li.textContent = "No upcoming sessions.";
+        sessionList.appendChild(li);
+    }
+}
+// Example data for progress, notifications, attendance, and messages
+let notifications = [
+    "Your child scored 90% in Science Quiz.",
+    "Your child missed a live session last week."
+];
+
+let attendance = 30;
+let totalClasses = 34;
+
+let voiceMessages = ["You have a voice message from Math Tutor."];
+let writtenNotices = ["Please review your child's attendance for this month."];
+
+// Display notifications on load
+window.onload = function() {
+    updateNotifications();
+    updateMessages();
+};
+
+// Function to display notifications
+function updateNotifications() {
+    let notificationList = document.getElementById('notification-list');
+    notificationList.innerHTML = ''; // Clear previous notifications
+
+    if (notifications.length > 0) {
+        notifications.forEach(notification => {
+            let li = document.createElement('li');
+            li.textContent = notification;
+            notificationList.appendChild(li);
+        });
+    } else {
+        let li = document.createElement('li');
+        li.textContent = "No new notifications.";
+        notificationList.appendChild(li);
+    }
+}
+
+// Function to display voice messages and written notices
+function updateMessages() {
+    let voiceMessagesList = document.getElementById('voice-messages');
+    let writtenNoticesList = document.getElementById('written-notices');
+
+    voiceMessagesList.innerHTML = '';
+    writtenNoticesList.innerHTML = '';
+
+    // Display voice messages
+    if (voiceMessages.length > 0) {
+        voiceMessages.forEach(message => {
+            let li = document.createElement('li');
+            li.textContent = message;
+            voiceMessagesList.appendChild(li);
+        });
+    } else {
+        let li = document.createElement('li');
+        li.textContent = "No voice messages.";
+        voiceMessagesList.appendChild(li);
+    }
+
+    // Display written notices
+    if (writtenNotices.length > 0) {
+        writtenNotices.forEach(notice => {
+            let li = document.createElement('li');
+            li.textContent = notice;
+            writtenNoticesList.appendChild(li);
+        });
+    } else {
+        let li = document.createElement('li');
+        li.textContent = "No new notices.";
+        writtenNoticesList.appendChild(li);
+    }
+}
+
+
